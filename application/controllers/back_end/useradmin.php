@@ -21,7 +21,7 @@ $this->output->enable_profiler(TRUE);
   $this->form_validation->set_rules("email","Email","valid_email");
   $this->form_validation->set_rules("postion","Position","valid_email");
   
-  $this->form_validation->set_rules("username","Username","required|alpha_numeric|is_unique[user_t.User_name]");
+  $this->form_validation->set_rules("username","Username","required|alpha_numeric|is_unique[User_t.User_name]");
   $this->form_validation->set_rules("password","Password","required|alpha_numeric|matches[password_check");
   $this->form_validation->set_rules("user_type","User Type","require|alpha");
   
