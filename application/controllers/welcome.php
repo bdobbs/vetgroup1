@@ -22,6 +22,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('defaultPageHeader');
                 $this->load->view('homeBody');
                 $this->load->view('defaultPageFooter');
+                //need to update menu
 	}
 }
 
