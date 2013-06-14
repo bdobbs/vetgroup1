@@ -19,8 +19,10 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+              
 		$this->load->view('defaultPageHeader');
-                $this->load->view('homeBody');
+                $this->load->view('defaultPageSidebar');
+                $this->load->view('defaultHomePageContent');
                 $this->load->view('defaultPageFooter');
                 //need to update menu
 	}
