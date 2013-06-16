@@ -66,6 +66,16 @@ class Login extends CI_Controller {
             $main_page = base_url();
             redirect($main_page);
         }
+        
+        
+         public function account(){
+         
+   
+            $this->load->view('defaultPageHeader');
+            $this->load->view('defaultPageSidebar');
+            $this->load->view('customerAccountPage');
+            $this->load->view('defaultPageFooter');
+        }
     }
 
     /* End of file login.php */

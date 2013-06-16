@@ -1,5 +1,5 @@
    <p> <div class="fltrt" >   
-           <?php if ($this->session->userdata('logged_in')){echo "<img src=\"images/cart.jpg\"  width=\"20\" height=\"20\" />"; echo $this->cart->total();}?>
+           <?php if ($this->session->userdata('logged_in')){echo "<img src=".base_url()."images/cart.jpg  width=\"20\" height=\"20\" />"; echo $this->cart->total();}?>
      </div></p>
 <div class="sidebar2">
  

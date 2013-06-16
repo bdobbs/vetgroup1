@@ -8,9 +8,24 @@ class Appointment extends CI_Controller {
    public function schedule(){
         	$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
+               
                 $this->load->model('Useradmin_model');
                 
-$this->output->enable_profiler(TRUE);
+               	$this->load->view('defaultPageHeader');
+                $this->load->view('defaultPageSidebar');
+                
+                $prefs = array (
+               'show_next_prev'  => TRUE,
+              'next_prev_url'   => 'http://woodstock/index.php/front_end/appointment/schedule'
+             );
+                
+                 $this->load->library('calendar',$prefs);
+                $this->load->view('appointmentForm');
+            
+                $this->load->view('defaultPageFooter');
+                
+                
+/*$this->output->enable_profiler(TRUE);
 
   $this->form_validation->set_rules("first_name","First Name","required|alpha");
   $this->form_validation->set_rules("last_name","Last  Name","required|alpha");
@@ -54,8 +69,8 @@ $this->output->enable_profiler(TRUE);
 			//	'uUserID' => $this->Rsupm->_getUserID()) ;
                      );
                      $this->Useradmin_model->addUserToDB($form_data_user,$form_data_staff);
-                     echo "hello";
-                }
+                     echo "hello"; 
+                }*/
     }
 }
 ?>

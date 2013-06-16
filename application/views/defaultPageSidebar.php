@@ -5,11 +5,12 @@
       <li><a href="<?php base_url();?>/index.php">Home</a></li>
       <li><a href="<?php base_url();?>/index.php/staticPages/destination/aboutUsPage">About Us</a></li>
       <li><a href="<?php base_url();?>/index.php/staticPages/destination/servicesPage">Services</a></li>
-      <li><a href="<?php base_url();?>Vetgroup_Staff.php">Meet the Staff</a></li>
-      <li><a href="<?php base_url();?>Vetgroup_Locations.php">Locations/Hours</a></li>
-      <li><a href="<?php base_url();?>Vetgroup_FAQ.dwt.php">FAQ</a></li>
+      <li><a href="<?php base_url();?>/index.php/staticPages/destination/staffPage">Meet the Staff</a></li>
+      <li><a href="<?php base_url();?>/index.php/staticPages/destination/officeHoursPage">Locations/Hours</a></li>
+     <!-- <li><a href="<?php base_url();?>Vetgroup_FAQ.dwt.php">FAQ</a></li> -->
       
       <?php if ($this->session->userdata('logged_in')) {?>
+      <li><a href="<?php base_url();?>/index.php/front_end/login/account">Account</a></li>
       <li><a href="<?php base_url();?>/index.php/front_end/login/login0">Logout</a></li>
           <?php } else { ?>
       <li><a href="<?php base_url();?>/index.php/front_end/login/login1">Login</a></li>
