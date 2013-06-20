@@ -3,11 +3,11 @@
      </div></p>
 <div class="sidebar2">
  
-    <h4>Backgrounds</h4>
-    <p>By nature, the background color on any div will only show for the length of the content. If you'd like a dividing line instead of a color, place a border on the side of the .content div (but only if it will always contain more content).</p>
+    <h4><strong> Schedule Your Appointment Today</strong></h4>
+    <p> Click here to schedule <a href="<?php echo base_url(); ?>index.php/front_end/appointment/schedule">online</a> .</p>
     <!-- end .sidebar2 --></div>
   <div class="footer">
-    <p>This .footer contains the declaration position:relative; to give Internet Explorer 6 hasLayout for the .footer and cause it to clear correctly. If you're not required to support IE6, you may remove it.</p>
+    <p><center> E-Commerce 4123 Summer 2013 Vet Group 1</center></p>
     <!-- end .footer --></div>
   <!-- end .container --></div>
 </body>

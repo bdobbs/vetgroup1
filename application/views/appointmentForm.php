@@ -1,6 +1,6 @@
   <div class="content"><p>
 <?php echo validation_errors();
-  echo $this->calendar->generate($this->uri->segment(4), $this->uri->segment(5)); ?></p>
+ echo $this->calendar->generate($this->uri->segment(4), $this->uri->segment(5)); ?></p>
 
  
 
